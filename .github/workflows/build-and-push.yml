@@ -22,9 +22,10 @@ jobs:
     - name: Checkout GitOps repo
       uses: actions/checkout@v3
       with:
-        repository: 0marMejdi/gitops-config
+        repository: 0marMejdi/config-gitopsy
         # token: ${{ secrets.GITHUB_TOKEN }}
-        path: gitops-config
+        path: config-gitopsy
+        ref: main
 
     - name: Update Helm values
       run: |
